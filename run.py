@@ -2,7 +2,8 @@
 import random
 import os
 
-account = 1000 # starting money + update after effect
+ACCOUNT = 1000 # starting money + update after effect
+WINS = 0 #counting wins
 
 print("-----------------------------------")
 print("      Wellcome to slot machine     ")
@@ -41,16 +42,17 @@ while True: #main game function
         print("-----------------------------------")
         print("-----------------------------------")
         if num1 == num2 == num3:
-            account += 1000 # addition to account (on win)
+            ACCOUNT += 1000 # addition to account (on win)
+            WINS += 1 #addition to win
             print("-----------------------------------")
-            print(f"   MONEY : {account}              ")
+            print(f"   MONEY : {ACCOUNT}     JACKPOTS : {WINS}")
             print("-----------------------------------")
             print("           You won 1000            ")
             print("-----------------------------------")
         else:
-            account -= 10 # subtract from account (on lose)
+            ACCOUNT -= 10 # subtract from account (on lose)
             print("-----------------------------------")
-            print(f"   MONEY : {account}              ")
+            print(f"   MONEY : {ACCOUNT}     JACKPOTS : {WINS}")
             print("-----------------------------------")
             print("           You lost 10             ")
             print("-----------------------------------")
