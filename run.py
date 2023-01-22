@@ -2,6 +2,8 @@
 import random
 import os
 
+account = 1000 # starting money + update after effect
+
 print("-----------------------------------")
 print("      Wellcome to slot machine     ")
 print("      1000 added to account...     ")
@@ -25,10 +27,11 @@ while True: #main game function
     print("  [S] to Spin   |   [E] to Exit")
     DESITION = str(input("-----------------------------------\n   Type :"))
     num1 = random.randint(1,5) #(1,5)  >>> (0,9) for harder difficulity
-    num2 = random.randint(1,5)
-    num3 = random.randint(1,5)
+    num2 = random.randint(1,5) # change all nums
+    num3 = random.randint(1,5) # to get harder difficulty
     if DESITION == "S": # start game
         os.system('cls') # ('cls') windows, ('clear') linux/mac
+        print("-----------------------------------")
         print("-----------------------------------")
         print("----------| SLOT MACHINE |---------")
         print("-----------------------------------")
@@ -38,9 +41,17 @@ while True: #main game function
         print("-----------------------------------")
         print("-----------------------------------")
         if num1 == num2 == num3:
+            account += 1000 # addition to account (on win)
+            print("-----------------------------------")
+            print(f"   MONEY : {account}              ")
+            print("-----------------------------------")
             print("           You won 1000            ")
             print("-----------------------------------")
         else:
+            account -= 10 # subtract from account (on lose)
+            print("-----------------------------------")
+            print(f"   MONEY : {account}              ")
+            print("-----------------------------------")
             print("           You lost 10             ")
             print("-----------------------------------")
     elif DESITION == "E": # exit the game
