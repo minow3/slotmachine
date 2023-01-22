@@ -31,7 +31,7 @@ while True:  # main game function
     num2 = random.randint(1, 5)  # change all nums
     num3 = random.randint(1, 5)  # to get harder difficulty
     if DESITION == "s":  # start game
-        os.system('cls')  # ('cls') windows, ('clear') linux/mac
+        os.system('clear')  # ('cls') windows, ('clear') linux/mac
         print("-----------------------------------")
         print("-----------------------------------")
         print("----------| SLOT MACHINE |---------")
@@ -62,7 +62,7 @@ while True:  # main game function
         print("-----------------------------------")
         break
     else:
-        os.system('cls')  # ('cls') windows, ('clear') linux/mac
+        os.system('clear')  # ('cls') windows, ('clear') linux/mac
         print("-----------------------------------")
         print("           Wrong input             ")
         print("-----------------------------------")
