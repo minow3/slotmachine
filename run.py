@@ -2,7 +2,7 @@
 import random
 import os
 
-ACCOUNT = 1000  # starting money + update after effect
+ACCOUNT = 100  # starting money + update after effect
 WINS = 0  # counting wins
 
 print("-----------------------------------")
@@ -49,6 +49,10 @@ while True:  # main game function
             print("-----------------------------------")
             print("           You won 1000            ")
             print("-----------------------------------")
+        elif ACCOUNT <= 0:
+            print("Out of money. Game closing...")
+            print("-----------------------------------")
+            break
         else:
             ACCOUNT -= 10  # subtract from account (on lose)
             print("-----------------------------------")
