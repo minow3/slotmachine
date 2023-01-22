@@ -1,5 +1,6 @@
 '''Slot Machine'''
 import random
+import os
 
 print("-----------------------------------")
 print('------------Wellcome To------------')
@@ -17,6 +18,7 @@ while True: #main game function
     num2 = random.randint(1,5)
     num3 = random.randint(1,5)
     if DESITION == "S": # start game
+        os.system('cls') # ('cls') windows, ('clear') linux/mac
         print("-----------------------------------")
         print(f"\t\t{num1}|{num2}|{num3}") # align to center
         print("-----------------------------------")
