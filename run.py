@@ -7,7 +7,7 @@ WINS = 0  # counting wins
 
 print("-----------------------------------")
 print("      Welcome to slot machine      ")
-print("      1000 added to account...     ")
+print("      100 added to account...      ")
 print("-----------------------------------")
 print("-----------------------------------")
 print("----------| SLOT MACHINE |---------")
