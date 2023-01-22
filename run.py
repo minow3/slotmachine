@@ -2,8 +2,8 @@
 import random
 import os
 
-ACCOUNT = 1000 # starting money + update after effect
-WINS = 0 #counting wins
+ACCOUNT = 1000  # starting money + update after effect
+WINS = 0  # counting wins
 
 print("-----------------------------------")
 print("      Welcome to slot machine      ")
@@ -24,14 +24,14 @@ print("    111   222   333   444   555    ")
 print("-----------------------------------")
 
 
-while True: #main game function
+while True:  # main game function
     print("  [s] to Spin   |   [e] to Exit")
     DESITION = str(input("-----------------------------------\n   Type :"))
-    num1 = random.randint(1,5) #(1,5)  >>> (0,9) for harder difficulity
-    num2 = random.randint(1,5) # change all nums
-    num3 = random.randint(1,5) # to get harder difficulty
-    if DESITION == "s": # start game
-        os.system('cls') # ('cls') windows, ('clear') linux/mac
+    num1 = random.randint(1, 5)  # (1, 5)  >>> (0, 9) for harder difficulity
+    num2 = random.randint(1, 5)  # change all nums
+    num3 = random.randint(1, 5)  # to get harder difficulty
+    if DESITION == "s":  # start game
+        os.system('cls')  # ('cls') windows, ('clear') linux/mac
         print("-----------------------------------")
         print("-----------------------------------")
         print("----------| SLOT MACHINE |---------")
@@ -42,27 +42,27 @@ while True: #main game function
         print("-----------------------------------")
         print("-----------------------------------")
         if num1 == num2 == num3:
-            ACCOUNT += 1000 # addition to account (on win)
-            WINS += 1 #addition to win
+            ACCOUNT += 1000  # addition to account (on win)
+            WINS += 1  # addition to win
             print("-----------------------------------")
             print(f"   MONEY : {ACCOUNT}     JACKPOTS : {WINS}")
             print("-----------------------------------")
             print("           You won 1000            ")
             print("-----------------------------------")
         else:
-            ACCOUNT -= 10 # subtract from account (on lose)
+            ACCOUNT -= 10  # subtract from account (on lose)
             print("-----------------------------------")
             print(f"   MONEY : {ACCOUNT}     JACKPOTS : {WINS}")
             print("-----------------------------------")
             print("           You lost 10             ")
             print("-----------------------------------")
-    elif DESITION == "e": # exit the game
+    elif DESITION == "e":  # exit the game
         print("-----------------------------------")
         print("Thanks for playing. Game closing...")
         print("-----------------------------------")
         break
     else:
-        os.system('cls') # ('cls') windows, ('clear') linux/mac
+        os.system('cls')  # ('cls') windows, ('clear') linux/mac
         print("-----------------------------------")
         print("           Wrong input             ")
         print("-----------------------------------")
