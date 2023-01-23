@@ -1,31 +1,16 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## SLOT MACHINE
 
-Welcome USER_NAME,
+It's a Python terminal game, wich runs in the Code Institute mock terminal on Heroku. 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+The slot machine is a very simple game, but with great experience to the user. The goal is to get as many jackpots as possible and don't lose all your money.
 
-## Reminders
+[Here is the link to live version of project](https://slot-machine.herokuapp.com/)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+![website](media/readme/fullscreen.png)
 
-## Creating the Heroku app
+## How to play
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+![menu](media/readme/menu.png)
 
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+There are only two options to choose for the player. Typing s which is triggering spin or typing e which is closing the game. 
+User can keep repeating till hitting a jackpot or losing money.
