@@ -63,3 +63,33 @@ User can keep repeating till hitting a jackpot or losing money.
 For this project I decided to use RNG which is stands for random number generator, RNG does not use any form of memory to determine what number should be generated. Slots are generated randomly and displayed to the user. This  project made using while loop backing with if, elif, else statements.
 Used few variables to store data as money count and jackpots. User input was limited to two options button [s] and [e], to spin or exit, typed something else would trigger wrong input message.
 
+## Testing
+
+* Tested in my local terminal and Code Institute Heroku terminal
+* Tested through a Code Institute PEP8 linter and confirmed there are no problems
+
+## Bugs
+
+* When deploying to heroku give an error, library can't be install.
+fixed : removed unused library from requirements.txt
+
+* fixed some typos in welcome message
+* console clear function was giving and erro, becouse was using windows function os.system('cls').
+fixed : changed to os.system('clear')
+
+## Deployment
+
+This project was deployed using Code Institute's mock terminal for Heroku.
+
+* Steps for deployment:
+  * Clone this repository
+  * Create new Heroku app
+  * Set port 8000 to config in settings section.
+  * Set the buildpacks to Python and Nodejs in that order
+  * Link Heroku app to the repository
+  * Click on Deploy
+
+## Credits
+
+* Code Institute for the deployment terminal
+* Wikipedia for the details of the Slot Machine
