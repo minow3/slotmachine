@@ -61,5 +61,5 @@ User can keep repeating till hitting a jackpot or losing money.
 ## Data Model
 
 For this project I decided to use RNG which is stands for random number generator, RNG does not use any form of memory to determine what number should be generated. Slots are generated randomly and displayed to the user. This  project made using while loop backing with if, elif, else statements.
-Used few variables to store data as money count and jackpots.
+Used few variables to store data as money count and jackpots. User input was limited to two options button [s] and [e], to spin or exit, typed something else would trigger wrong input message.
 
